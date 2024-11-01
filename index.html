@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG風クイズゲーム2</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSSファイルをリンク -->
+</head> 
+<body>
+
+<div id="RPG-select">
+    <h1>RPG風クイズゲーム2</h1>
+</div>
+    <div id="character-select">
+        <h2>キャラクターを選択してください</h2>
+        <button onclick="selectCharacter('勇者')" onmouseover="showComment(event, '勇者です')" onmouseout="hideComment()">
+            <img src="image/AdobeStock_624984417_Preview.png" alt="勇者" width="50" height="70">
+        </button>
+        <button onclick="selectCharacter('魔法使い')" onmouseover="showComment(event, '魔法使いです')" onmouseout="hideComment()">
+            <img src="image/AdobeStock_624984419_Preview.png" alt="魔法使い" width="50" height="70">
+        </button>
+        <button onclick="selectCharacter('戦士')" onmouseover="showComment(event, '戦士です')" onmouseout="hideComment()">
+            <img src="image/AdobeStock_624984421_Preview.png" alt="戦士" width="50" height="70">
+        </button>
+        <button onclick="selectCharacter('賢者')" onmouseover="showComment(event, '賢者です')" onmouseout="hideComment()">
+            <img src="image/AdobeStock_624984420_Preview.png" alt="賢者" width="50" height="70">
+        </button>
+    </div>
+
+    <div id="quiz-container">
+        <h2 id="question"></h2>
+        <div id="answers">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <p id="feedback"></p>
+    </div>
+
+    <div id="result-container">
+        <h2>結果</h2>
+        <p id="result"></p>
+        <button onclick="restartGame()">再スタート</button>
+    </div>
+
+    <div id="comment"></div>
+
+    <script src="script.js"></script> <!-- ここにあなたのJavaScriptファイルのパスを指定 -->
+</body>
+</html>

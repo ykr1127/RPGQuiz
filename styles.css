@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(image/AdobeStock_723197118_Preview.jpeg) center / cover; /* 画像を貼るコード */
+ background-attachment: fixed;
+
+}
+
+
+h2 {
+  color: #6be034; 
+}
+h1{
+    margin: 5% 12% 14% 25%;
+    color: #d989e4;
+}
+
+#character-select {
+    margin:50px 4px 20px 15% ; /* 自動で中央に配置 */
+    max-width: 800px;
+}
+
+#result-container {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(111, 235, 177, 0.1);
+}
+
+#quiz-container{
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0);
+}
+
+button {
+    margin: 7px;
+    padding: 24px 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0); /* 背景透明 */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+p {
+    color: #e03434;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0); /* 背景透明 */
+}
+
+#comment {
+    position: absolute;
+    background: rgba(238, 235, 76, 0.9);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+#feedback {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#result {
+    font-size: 20px;
+    margin: 20px 0;
+}
